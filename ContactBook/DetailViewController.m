@@ -16,20 +16,19 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem {
-    if (_detailItem != newDetailItem) {
-        _detailItem = newDetailItem;
-            
-        // Update the view.
-        [self configureView];
+-(void)setPerson:(Person *)person {
+    if(_person != person) {
+        _person = person;
     }
 }
 
 - (void)configureView {
-    // Update the user interface for the detail item.
-    if (self.detailItem) {
-        self.detailDescriptionLabel.text = [[self.detailItem valueForKey:@"timeStamp"] description];
-    }
+    self.phoneLabel.text = self.person.phoneNumber;
+    self.nameLabel.text = self.person.name;
+}
+
+-(void)callContact:(UIButton *)sender {
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.person.phoneNumber]];
 }
 
 - (void)viewDidLoad {

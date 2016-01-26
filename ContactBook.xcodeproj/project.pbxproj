@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA5E07E71C5658140056130A /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5E07E31C5658140056130A /* ContactsTableViewCell.m */; };
+		FA5E07E81C5658140056130A /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */; };
+		FA5E07E91C5658140056130A /* ContactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5E07E61C5658140056130A /* ContactBook.m */; };
+		FA5E07EF1C56A42B0056130A /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5E07EE1C56A42B0056130A /* AddContactViewController.m */; };
 		FA7539EE1C4EB0D0005DB860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539ED1C4EB0D0005DB860 /* main.m */; };
 		FA7539F11C4EB0D0005DB860 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F01C4EB0D0005DB860 /* AppDelegate.m */; };
 		FA7539F41C4EB0D0005DB860 /* ContactBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F21C4EB0D0005DB860 /* ContactBook.xcdatamodeld */; };
@@ -16,6 +20,9 @@
 		FA7539FF1C4EB0D0005DB860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7539FE1C4EB0D0005DB860 /* Images.xcassets */; };
 		FA753A021C4EB0D0005DB860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA753A001C4EB0D0005DB860 /* LaunchScreen.xib */; };
 		FA753A0E1C4EB0D0005DB860 /* ContactBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA753A0D1C4EB0D0005DB860 /* ContactBookTests.m */; };
+		FA753A231C4EB407005DB860 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FA753A221C4EB407005DB860 /* Person.m */; };
+		FA753A251C4EB4BE005DB860 /* Contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = FA753A241C4EB4BE005DB860 /* Contacts.json */; };
+		FA82155E1C57C01000E2CF22 /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA5E07E21C5658140056130A /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
+		FA5E07E31C5658140056130A /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
+		FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
+		FA5E07E51C5658140056130A /* ContactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactBook.h; sourceTree = "<group>"; };
+		FA5E07E61C5658140056130A /* ContactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactBook.m; sourceTree = "<group>"; };
+		FA5E07ED1C56A42B0056130A /* AddContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		FA5E07EE1C56A42B0056130A /* AddContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
 		FA7539E81C4EB0D0005DB860 /* ContactBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7539EC1C4EB0D0005DB860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7539ED1C4EB0D0005DB860 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -45,6 +59,11 @@
 		FA753A071C4EB0D0005DB860 /* ContactBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContactBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA753A0C1C4EB0D0005DB860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA753A0D1C4EB0D0005DB860 /* ContactBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactBookTests.m; sourceTree = "<group>"; };
+		FA753A211C4EB407005DB860 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		FA753A221C4EB407005DB860 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		FA753A241C4EB4BE005DB860 /* Contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contacts.json; sourceTree = "<group>"; };
+		FA82155C1C57C01000E2CF22 /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
+		FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +105,16 @@
 		FA7539EA1C4EB0D0005DB860 /* ContactBook */ = {
 			isa = PBXGroup;
 			children = (
+				FA82155C1C57C01000E2CF22 /* TextFieldValidator.h */,
+				FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */,
+				FA5E07ED1C56A42B0056130A /* AddContactViewController.h */,
+				FA5E07EE1C56A42B0056130A /* AddContactViewController.m */,
+				FA5E07E21C5658140056130A /* ContactsTableViewCell.h */,
+				FA5E07E31C5658140056130A /* ContactsTableViewCell.m */,
+				FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */,
+				FA5E07E51C5658140056130A /* ContactBook.h */,
+				FA5E07E61C5658140056130A /* ContactBook.m */,
+				FA753A201C4EB3C4005DB860 /* Model */,
 				FA7539EF1C4EB0D0005DB860 /* AppDelegate.h */,
 				FA7539F01C4EB0D0005DB860 /* AppDelegate.m */,
 				FA7539F51C4EB0D0005DB860 /* MasterViewController.h */,
@@ -97,6 +126,7 @@
 				FA753A001C4EB0D0005DB860 /* LaunchScreen.xib */,
 				FA7539F21C4EB0D0005DB860 /* ContactBook.xcdatamodeld */,
 				FA7539EB1C4EB0D0005DB860 /* Supporting Files */,
+				FA753A241C4EB4BE005DB860 /* Contacts.json */,
 			);
 			path = ContactBook;
 			sourceTree = "<group>";
@@ -125,6 +155,15 @@
 				FA753A0C1C4EB0D0005DB860 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA753A201C4EB3C4005DB860 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA753A211C4EB407005DB860 /* Person.h */,
+				FA753A221C4EB407005DB860 /* Person.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +246,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA753A251C4EB4BE005DB860 /* Contacts.json in Resources */,
 				FA7539FD1C4EB0D0005DB860 /* Main.storyboard in Resources */,
 				FA753A021C4EB0D0005DB860 /* LaunchScreen.xib in Resources */,
 				FA7539FF1C4EB0D0005DB860 /* Images.xcassets in Resources */,
+				FA5E07E81C5658140056130A /* ContactsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +268,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA753A231C4EB407005DB860 /* Person.m in Sources */,
 				FA7539FA1C4EB0D0005DB860 /* DetailViewController.m in Sources */,
 				FA7539F71C4EB0D0005DB860 /* MasterViewController.m in Sources */,
 				FA7539F11C4EB0D0005DB860 /* AppDelegate.m in Sources */,
 				FA7539EE1C4EB0D0005DB860 /* main.m in Sources */,
 				FA7539F41C4EB0D0005DB860 /* ContactBook.xcdatamodeld in Sources */,
+				FA5E07E71C5658140056130A /* ContactsTableViewCell.m in Sources */,
+				FA82155E1C57C01000E2CF22 /* TextFieldValidator.m in Sources */,
+				FA5E07EF1C56A42B0056130A /* AddContactViewController.m in Sources */,
+				FA5E07E91C5658140056130A /* ContactBook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +474,7 @@
 				FA753A131C4EB0D0005DB860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA753A141C4EB0D0005DB860 /* Build configuration list for PBXNativeTarget "ContactBookTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +483,7 @@
 				FA753A161C4EB0D0005DB860 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
