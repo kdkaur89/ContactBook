@@ -17,9 +17,11 @@
         _lastName = [jsonDictionary objectForKey:@"last_name"];
         _personID = [jsonDictionary objectForKey:@"id"];
         _phoneNumber = [jsonDictionary objectForKey:@"phone"];
-        _name = [NSString stringWithFormat:@"%@ %@", _firstName, _lastName];
     }
     return self;
 }
 
+-(NSString *)personName{
+    return [NSString stringWithFormat:@"%@ %@", _firstName, _lastName];
+}
 @end

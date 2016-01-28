@@ -14,8 +14,7 @@
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, strong) NSString *phoneNumber;
 @property (nonatomic, assign) NSString *personID;
-@property (nonatomic, strong) NSString *name;
 
-
+-(NSString *)personName;
 -(id)initWithJSONDictionary: (NSDictionary *)jsonDictionary;
 @end

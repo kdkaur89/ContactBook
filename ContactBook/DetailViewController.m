@@ -24,7 +24,7 @@
 
 - (void)configureView {
     self.phoneLabel.text = self.person.phoneNumber;
-    self.nameLabel.text = self.person.name;
+    self.nameLabel.text = self.person.personName;
 }
 
 -(void)callContact:(UIButton *)sender {

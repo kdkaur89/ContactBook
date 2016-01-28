@@ -37,10 +37,16 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         _contacts = [contactBook getContacts].mutableCopy;
-        [self.tableView performSelectorOnMainThread:@selector(reloadData) withObject:nil waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(reloadTableView) withObject:nil waitUntilDone:YES];
+      
     });
+
+}
+
+-(void)reloadTableView{
     
-    
+    [self.tableView reloadData];
+    [self updateTotalNumberOfContacts];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +54,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)updateTotalNumberOfContacts{
+    
+    self.navigationItem.title = [NSString stringWithFormat:@"Number of Contacts: %ld", _contacts.count];
+}
 
 #pragma mark - Segues
 
@@ -60,11 +70,8 @@
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
     else if ([segue.identifier isEqualToString:@"addContacts"]) {
-        
         self.tableView.editing = NO;
         AddContactViewController *addContactsViewController = (AddContactViewController *)segue.destinationViewController;
-        addContactsViewController.person = [[Person alloc]initWithJSONDictionary:nil];
-        addContactsViewController.person.personID = [NSString stringWithFormat:@"%i",(int)_contacts.count];
         addContactsViewController.masterViewController = self;
         
     }
@@ -99,7 +106,7 @@
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         [self deleteContactAtIndexPath:indexPath];
         [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-        
+        [self updateTotalNumberOfContacts];
     }
 }
 
@@ -116,7 +123,7 @@
     }
     
     Person *person = [_contacts objectAtIndex:indexPath.row];
-    contactsCell.name.text = person.name;
+    contactsCell.name.text = person.personName;
     contactsCell.phone.text = person.phoneNumber;
     return contactsCell;
 }

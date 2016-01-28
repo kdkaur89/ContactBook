@@ -15,5 +15,6 @@
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (strong, nonatomic) NSMutableArray *contacts;
 
+-(void)reloadTableView;
 @end
 

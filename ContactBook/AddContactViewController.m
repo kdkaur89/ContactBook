@@ -35,21 +35,15 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setPerson:(Person *)person {
-    
-    if(_person != person) {
-        _person = person;
-    }
-}
 - (IBAction)saveDetails:(UIButton *)sender {
     
     //Add contact to contacts array
-    
+    _person = [[Person alloc]init];
     _person.firstName = self.firstNameTextField.text;
     _person.lastName = self.lastNameTextField.text;
     _person.phoneNumber = self.phoneNumberTextField.text;
     [_masterViewController.contacts insertObject:_person atIndex:self.masterViewController.contacts.count];
-    [_masterViewController.tableView reloadData];
+    [_masterViewController reloadTableView];
     [self.navigationController popViewControllerAnimated:TRUE];
 }
 
