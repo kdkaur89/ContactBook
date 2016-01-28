@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA222A7A1C5A931D00A97357 /* TextFieldValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA222A791C5A931D00A97357 /* TextFieldValidatorTests.m */; };
 		FA5E07E71C5658140056130A /* ContactsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5E07E31C5658140056130A /* ContactsTableViewCell.m */; };
 		FA5E07E81C5658140056130A /* ContactsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */; };
 		FA5E07E91C5658140056130A /* ContactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FA5E07E61C5658140056130A /* ContactBook.m */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA222A791C5A931D00A97357 /* TextFieldValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidatorTests.m; sourceTree = "<group>"; };
 		FA5E07E21C5658140056130A /* ContactsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewCell.h; sourceTree = "<group>"; };
 		FA5E07E31C5658140056130A /* ContactsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewCell.m; sourceTree = "<group>"; };
 		FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsTableViewCell.xib; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 		FA753A0A1C4EB0D0005DB860 /* ContactBookTests */ = {
 			isa = PBXGroup;
 			children = (
+				FA222A791C5A931D00A97357 /* TextFieldValidatorTests.m */,
 				FA753A0D1C4EB0D0005DB860 /* ContactBookTests.m */,
 				FA753A0B1C4EB0D0005DB860 /* Supporting Files */,
 			);
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA222A7A1C5A931D00A97357 /* TextFieldValidatorTests.m in Sources */,
 				FA753A0E1C4EB0D0005DB860 /* ContactBookTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
