@@ -39,6 +39,9 @@
     self.lastNameLabel.text = NSLocalizedString(@"lastName", nil);
     self.phoneLabel.text = NSLocalizedString(@"phone", nil);
     [self.saveButton setTitle:NSLocalizedString(@"save", nil) forState:UIControlStateNormal];
+    self.firstNameTextField.placeholder = NSLocalizedString(@"firstNamePlaceholder", nil);
+    self.lastNameTextField.placeholder = NSLocalizedString(@"lastNamePlaceholder", nil);
+    self.phoneNumberTextField.placeholder = NSLocalizedString(@"phonePlaceholder", nil);
     self.firstNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
     self.lastNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
     self.saveButton.enabled = false;

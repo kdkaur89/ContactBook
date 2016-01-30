@@ -45,7 +45,7 @@
 
 #pragma mark -Actions
 -(void)callContact:(UIButton *)sender {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.person.phoneNumber]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",self.person.phoneNumber]]];
 }
 
 

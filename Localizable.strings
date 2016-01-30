@@ -12,3 +12,6 @@
 "firstName" = "First name";
 "lastName" = "Last Name";
 "save" = "Save";
+"firstNamePlaceholder" = "Atleast one character";
+"lastNamePlaceholder" = "Last Name";
+"phonePlaceholder" = " +XXXXXXXXXXXXX";
