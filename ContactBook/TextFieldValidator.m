@@ -15,4 +15,5 @@
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", self.regex];
     return [predicate evaluateWithObject:self.text];
 }
+
 @end

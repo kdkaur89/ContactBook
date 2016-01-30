@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>226F2175-FEB4-4E71-B866-CC68248D3DDD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ContactBook</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>113F44AFA8D2D670280FF18215F57EFE0FB306FF</key>
+		<string>https://github.com/kdkaur89/ContactBook.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ContactBook.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>113F44AFA8D2D670280FF18215F57EFE0FB306FF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/kdkaur89/ContactBook.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>113F44AFA8D2D670280FF18215F57EFE0FB306FF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>113F44AFA8D2D670280FF18215F57EFE0FB306FF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ContactBookApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

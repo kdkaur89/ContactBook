@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class DetailViewController;
+@class ContactsDetailViewController;
 
-@interface MasterViewController : UITableViewController <UITextFieldDelegate>
+@interface ContactsViewController : UITableViewController <UITextFieldDelegate>
 
-@property (strong, nonatomic) DetailViewController *detailViewController;
+@property (strong, nonatomic) ContactsDetailViewController *detailViewController;
 @property (strong, nonatomic) NSMutableArray *contacts;
 
 -(void)reloadTableView;

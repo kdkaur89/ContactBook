@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Person.h"
-#import "MasterViewController.h"
+#import "ContactsViewController.h"
 #import "TextFieldValidator.h"
+
+#define nameRegex @"[a-zA-Z]{1,}"
+#define numberRegex @"^((\\+)|(00))[0-9]{6,14}$"
 
 @interface AddContactViewController : UIViewController <UITextFieldDelegate>
 
@@ -20,8 +23,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *lastNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
 @property (weak, nonatomic) IBOutlet UIButton *saveButton;
-@property (strong, nonatomic) MasterViewController *masterViewController;
 
+@property (strong, nonatomic) ContactsViewController *masterViewController;
 @property (strong, nonatomic) Person *person;
 
 - (IBAction)saveDetails:(UIButton *)sender;

@@ -6,18 +6,20 @@
 //  Copyright (c) 2016 KD. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "ContactsViewController.h"
+#import "ContactDetailsViewController.h"
 #import "ContactBook.h"
 #import "ContactsTableViewCell.h"
 #import "AddContactViewController.h"
-@interface MasterViewController ()
+@interface ContactsViewController ()
 
 
 @property (nonatomic, strong) Person *personObject;
 @end
 
-@implementation MasterViewController
+@implementation ContactsViewController
+
+#pragma mark - View lifecycle methods
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -43,28 +45,49 @@
 
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view configurations
+
 -(void)reloadTableView{
     
     [self.tableView reloadData];
     [self updateTotalNumberOfContacts];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (void)updateTotalNumberOfContacts{
     
-    self.navigationItem.title = [NSString stringWithFormat:@"Number of Contacts: %ld", _contacts.count];
+    self.navigationItem.title = [NSString stringWithFormat:@"%@%ld",NSLocalizedString(@"numberOfContacts", nil), _contacts.count];
 }
+
+- (ContactsTableViewCell *)configureCellForIndexPath:(NSIndexPath *)indexPath {
+    
+    ContactsTableViewCell *contactsCell  = [self.tableView dequeueReusableCellWithIdentifier:@"ContactsCell"];
+    
+    if(contactsCell == nil) {
+        contactsCell = [[ContactsTableViewCell alloc]init];
+    }
+    
+    Person *person = [_contacts objectAtIndex:indexPath.row];
+    contactsCell.name.text = person.personName;
+    contactsCell.phone.text = person.phoneNumber;
+    return contactsCell;
+}
+
+- (void)deleteContactAtIndexPath:(NSIndexPath *)indexPath {
+    [_contacts removeObjectAtIndex:(int)indexPath.row ];
+}
+
 
 #pragma mark - Segues
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
+        ContactDetailsViewController *controller = (ContactDetailsViewController *)[[segue destinationViewController] topViewController];
         [controller setPerson:[_contacts objectAtIndex:indexPath.row]];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
@@ -113,24 +136,5 @@
 -(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewCellEditingStyleDelete;
 }
-
-- (ContactsTableViewCell *)configureCellForIndexPath:(NSIndexPath *)indexPath {
-    
-    ContactsTableViewCell *contactsCell  = [self.tableView dequeueReusableCellWithIdentifier:@"ContactsCell"];
-    
-    if(contactsCell == nil) {
-        contactsCell = [[ContactsTableViewCell alloc]init];
-    }
-    
-    Person *person = [_contacts objectAtIndex:indexPath.row];
-    contactsCell.name.text = person.personName;
-    contactsCell.phone.text = person.phoneNumber;
-    return contactsCell;
-}
-
-- (void)deleteContactAtIndexPath:(NSIndexPath *)indexPath {
-    [_contacts removeObjectAtIndex:(int)indexPath.row ];
-}
-
 
 @end

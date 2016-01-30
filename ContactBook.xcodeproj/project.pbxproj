@@ -15,8 +15,8 @@
 		FA7539EE1C4EB0D0005DB860 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539ED1C4EB0D0005DB860 /* main.m */; };
 		FA7539F11C4EB0D0005DB860 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F01C4EB0D0005DB860 /* AppDelegate.m */; };
 		FA7539F41C4EB0D0005DB860 /* ContactBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F21C4EB0D0005DB860 /* ContactBook.xcdatamodeld */; };
-		FA7539F71C4EB0D0005DB860 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F61C4EB0D0005DB860 /* MasterViewController.m */; };
-		FA7539FA1C4EB0D0005DB860 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F91C4EB0D0005DB860 /* DetailViewController.m */; };
+		FA7539F71C4EB0D0005DB860 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F61C4EB0D0005DB860 /* ContactsViewController.m */; };
+		FA7539FA1C4EB0D0005DB860 /* ContactDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7539F91C4EB0D0005DB860 /* ContactDetailsViewController.m */; };
 		FA7539FD1C4EB0D0005DB860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7539FB1C4EB0D0005DB860 /* Main.storyboard */; };
 		FA7539FF1C4EB0D0005DB860 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7539FE1C4EB0D0005DB860 /* Images.xcassets */; };
 		FA753A021C4EB0D0005DB860 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA753A001C4EB0D0005DB860 /* LaunchScreen.xib */; };
@@ -24,6 +24,7 @@
 		FA753A231C4EB407005DB860 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = FA753A221C4EB407005DB860 /* Person.m */; };
 		FA753A251C4EB4BE005DB860 /* Contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = FA753A241C4EB4BE005DB860 /* Contacts.json */; };
 		FA82155E1C57C01000E2CF22 /* TextFieldValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */; };
+		FAD806E91C5CCEB800166E95 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAD806E81C5CCEB800166E95 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +52,10 @@
 		FA7539EF1C4EB0D0005DB860 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FA7539F01C4EB0D0005DB860 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FA7539F31C4EB0D0005DB860 /* ContactBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactBook.xcdatamodel; sourceTree = "<group>"; };
-		FA7539F51C4EB0D0005DB860 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		FA7539F61C4EB0D0005DB860 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		FA7539F81C4EB0D0005DB860 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FA7539F91C4EB0D0005DB860 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		FA7539F51C4EB0D0005DB860 /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		FA7539F61C4EB0D0005DB860 /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		FA7539F81C4EB0D0005DB860 /* ContactDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactDetailsViewController.h; sourceTree = "<group>"; };
+		FA7539F91C4EB0D0005DB860 /* ContactDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactDetailsViewController.m; sourceTree = "<group>"; };
 		FA7539FC1C4EB0D0005DB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA7539FE1C4EB0D0005DB860 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FA753A011C4EB0D0005DB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		FA753A241C4EB4BE005DB860 /* Contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contacts.json; sourceTree = "<group>"; };
 		FA82155C1C57C01000E2CF22 /* TextFieldValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldValidator.h; sourceTree = "<group>"; };
 		FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldValidator.m; sourceTree = "<group>"; };
+		FAD806E81C5CCEB800166E95 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ../Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,28 +109,18 @@
 		FA7539EA1C4EB0D0005DB860 /* ContactBook */ = {
 			isa = PBXGroup;
 			children = (
-				FA82155C1C57C01000E2CF22 /* TextFieldValidator.h */,
-				FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */,
-				FA5E07ED1C56A42B0056130A /* AddContactViewController.h */,
-				FA5E07EE1C56A42B0056130A /* AddContactViewController.m */,
-				FA5E07E21C5658140056130A /* ContactsTableViewCell.h */,
-				FA5E07E31C5658140056130A /* ContactsTableViewCell.m */,
-				FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */,
-				FA5E07E51C5658140056130A /* ContactBook.h */,
-				FA5E07E61C5658140056130A /* ContactBook.m */,
+				FAD806EE1C5CD18600166E95 /* Store */,
+				FAD806ED1C5CD17A00166E95 /* Helpers */,
+				FAD806EB1C5CD15800166E95 /* Controller */,
+				FAD806EA1C5CD14C00166E95 /* View */,
 				FA753A201C4EB3C4005DB860 /* Model */,
 				FA7539EF1C4EB0D0005DB860 /* AppDelegate.h */,
 				FA7539F01C4EB0D0005DB860 /* AppDelegate.m */,
-				FA7539F51C4EB0D0005DB860 /* MasterViewController.h */,
-				FA7539F61C4EB0D0005DB860 /* MasterViewController.m */,
-				FA7539F81C4EB0D0005DB860 /* DetailViewController.h */,
-				FA7539F91C4EB0D0005DB860 /* DetailViewController.m */,
 				FA7539FB1C4EB0D0005DB860 /* Main.storyboard */,
 				FA7539FE1C4EB0D0005DB860 /* Images.xcassets */,
 				FA753A001C4EB0D0005DB860 /* LaunchScreen.xib */,
 				FA7539F21C4EB0D0005DB860 /* ContactBook.xcdatamodeld */,
 				FA7539EB1C4EB0D0005DB860 /* Supporting Files */,
-				FA753A241C4EB4BE005DB860 /* Contacts.json */,
 			);
 			path = ContactBook;
 			sourceTree = "<group>";
@@ -136,6 +128,8 @@
 		FA7539EB1C4EB0D0005DB860 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA753A241C4EB4BE005DB860 /* Contacts.json */,
+				FAD806E81C5CCEB800166E95 /* Localizable.strings */,
 				FA7539EC1C4EB0D0005DB860 /* Info.plist */,
 				FA7539ED1C4EB0D0005DB860 /* main.m */,
 			);
@@ -167,6 +161,47 @@
 				FA753A221C4EB407005DB860 /* Person.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FAD806EA1C5CD14C00166E95 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E07E21C5658140056130A /* ContactsTableViewCell.h */,
+				FA5E07E31C5658140056130A /* ContactsTableViewCell.m */,
+				FA5E07E41C5658140056130A /* ContactsTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		FAD806EB1C5CD15800166E95 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E07ED1C56A42B0056130A /* AddContactViewController.h */,
+				FA5E07EE1C56A42B0056130A /* AddContactViewController.m */,
+				FA7539F51C4EB0D0005DB860 /* ContactsViewController.h */,
+				FA7539F61C4EB0D0005DB860 /* ContactsViewController.m */,
+				FA7539F81C4EB0D0005DB860 /* ContactDetailsViewController.h */,
+				FA7539F91C4EB0D0005DB860 /* ContactDetailsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FAD806ED1C5CD17A00166E95 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA82155C1C57C01000E2CF22 /* TextFieldValidator.h */,
+				FA82155D1C57C01000E2CF22 /* TextFieldValidator.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FAD806EE1C5CD18600166E95 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E07E51C5658140056130A /* ContactBook.h */,
+				FA5E07E61C5658140056130A /* ContactBook.m */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA753A251C4EB4BE005DB860 /* Contacts.json in Resources */,
+				FAD806E91C5CCEB800166E95 /* Localizable.strings in Resources */,
 				FA7539FD1C4EB0D0005DB860 /* Main.storyboard in Resources */,
 				FA753A021C4EB0D0005DB860 /* LaunchScreen.xib in Resources */,
 				FA7539FF1C4EB0D0005DB860 /* Images.xcassets in Resources */,
@@ -272,8 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA753A231C4EB407005DB860 /* Person.m in Sources */,
-				FA7539FA1C4EB0D0005DB860 /* DetailViewController.m in Sources */,
-				FA7539F71C4EB0D0005DB860 /* MasterViewController.m in Sources */,
+				FA7539FA1C4EB0D0005DB860 /* ContactDetailsViewController.m in Sources */,
+				FA7539F71C4EB0D0005DB860 /* ContactsViewController.m in Sources */,
 				FA7539F11C4EB0D0005DB860 /* AppDelegate.m in Sources */,
 				FA7539EE1C4EB0D0005DB860 /* main.m in Sources */,
 				FA7539F41C4EB0D0005DB860 /* ContactBook.xcdatamodeld in Sources */,

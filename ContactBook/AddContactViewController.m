@@ -11,22 +11,13 @@
 @interface AddContactViewController ()
 
 @end
-
 @implementation AddContactViewController
 
+#pragma mark - View lifecycle methods
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setRegex];
     [self configureView];
-    
-}
-
-- (void)configureView {
-    
-    self.firstNameTextField.regex = @"[a-zA-Z]*";
-    self.firstNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-    self.lastNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
-    self.phoneNumberTextField.regex = @"^((\\+)|(00))[0-9]{6,14}$";
-    self.saveButton.enabled = false;
     
 }
 
@@ -34,6 +25,28 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma view configuration
+
+- (void)setRegex{
+    self.firstNameTextField.regex = nameRegex;
+    self.phoneNumberTextField.regex = numberRegex;
+}
+
+- (void)configureView {
+
+    self.firstNameLabel.text = NSLocalizedString(@"firstName", nil);
+    self.lastNameLabel.text = NSLocalizedString(@"lastName", nil);
+    self.phoneLabel.text = NSLocalizedString(@"phone", nil);
+    [self.saveButton setTitle:NSLocalizedString(@"save", nil) forState:UIControlStateNormal];
+    self.firstNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+    self.lastNameTextField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+    self.saveButton.enabled = false;
+    
+}
+
+
+#pragma mark -Actions
 
 - (IBAction)saveDetails:(UIButton *)sender {
     

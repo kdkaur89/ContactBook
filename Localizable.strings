@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  ContactBook
+
+  Created by Kirandeep Kaur on 30/01/16.
+  Copyright (c) 2016 KD. All rights reserved.
+*/
+
+"numberOfContacts" = "Number of Contacts: ";
+"name" = "Name";
+"phone" = "Phone";
+"firstName" = "First name";
+"lastName" = "Last Name";
+"save" = "Save";

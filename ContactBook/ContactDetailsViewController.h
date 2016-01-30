@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Person.h"
-@interface DetailViewController : UIViewController
+@interface ContactDetailsViewController : UIViewController
 
 @property (strong, nonatomic) Person *person;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameValueLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneValueLabel;
 
 -(IBAction)callContact:(UIButton *)sender;
 @end

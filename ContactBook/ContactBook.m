@@ -11,6 +11,7 @@
 @implementation ContactBook
 
 - (NSArray *)getContactsFromFile: (NSURL *)url {
+    
     // Create a NSURLRequest with the given URL
     NSURLRequest *request = [NSURLRequest requestWithURL:url
                                              cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
